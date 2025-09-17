@@ -1,7 +1,10 @@
 <?php
-    if( $_SERVER['SERVER_NAME'] == 'kontaktlencsek.hu' || $_SERVER['SERVER_NAME'] == 'test.kontaktlencsek.hu' ) {
-		require_once 'adodb_lite/adodb.inc.php';
-	}
+    // Only load ADOdb if it's not already loaded (e.g., by Composer autoloader)
+    if( !function_exists('ADONewConnection') ) {
+        if( $_SERVER['SERVER_NAME'] == 'kontaktlencsek.hu' || $_SERVER['SERVER_NAME'] == 'test.kontaktlencsek.hu' ) {
+            require_once 'adodb_lite/adodb.inc.php';
+        }
+    }
       
     $db = ADONewConnection('mysqli');
     //$db->debug = true;
