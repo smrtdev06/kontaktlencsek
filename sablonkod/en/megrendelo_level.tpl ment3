@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+{literal}
+body {
+    margin: 0;
+    padding: 0 0 20px;
+    border: none;
+    background-color: #ffffff;
+} 
+
+.text-table {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+}
+
+.arial-11 { font: 11px  arial, helvetica, sans-serif; color: #333333; }
+
+.old-price {
+    color: #990000;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.arial-12 { font: 12px  arial, helvetica, sans-serif; color: #333333; line-height: 16px; }
+
+.arial-12-bold { font: bold 12px  arial, helvetica, sans-serif; color: #333333; }
+
+.arial-11-bold-white { font: bold 11px  arial, helvetica, sans-serif; color: #ffffff; }
+
+.arial-12-bold-white { font: bold 12px  arial, helvetica, sans-serif; color: #ffffff; }
+
+.arial-11-bold { font: bold 11px  arial, helvetica, sans-serif; color: #333333; }
+
+.main-menu {
+    font: bold 12px  arial, helvetica, sans-serif;
+    color: #ffffff; 
+}
+
+a.main-menu-link:link {  color: #ffffff; text-decoration: none; }
+a.main-menu-link:active { color: #ffffff; text-decoration: none; }
+a.main-menu-link:visited { color: #ffffff; text-decoration: none; }
+a.main-menu-link:hover { color: #52BAAF; text-decoration: none; }
+
+a.signature-link:link {  color: #ffffff; text-decoration: underline; }
+a.signature-link:active { color: #ffffff; text-decoration: underline; }
+a.signature-link:visited { color: #ffffff; text-decoration: underline; }
+a.signature-link:hover { color: #ffffff; text-decoration: none; }
+
+a.copyright-link:link {  color: #999999; text-decoration: underline; }
+a.copyright-link:active { color: #999999; text-decoration: underline; }
+a.copyright-link:visited { color: #999999; text-decoration: underline; }
+a.copyright-link:hover { color: #52BAAF; text-decoration: none; }
+
+.current-main-menu {
+    font: bold 12px  arial, helvetica, sans-serif;
+    color: #52BAAF; 
+}
+
+.menu-title {
+    background-image: url('{/literal}{$sitenev}{literal}/kepek/arrow-grey-green.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #333333;
+    font-weight: bold;
+    padding-left: 17px; font-style:normal; font-variant:normal; font-size:12px; font-family:arial, helvetica, sans-serif
+}
+
+.title {
+    background-image: url('{/literal}{$sitenev}{literal}/kepek/arrow-green.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #333333;
+    font-weight: bold;
+    padding-left: 10px; font-style:normal; font-variant:normal; font-size:12px; font-family:arial, helvetica, sans-serif
+}
+
+.signature {
+    font: 10px  arial, helvetica, sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    font: 10px  arial, helvetica, sans-serif;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+a.body-link:link { 
+    color: #333333; 
+    text-decoration: underline; }
+a.body-link:active { 
+    color: #333333;
+    text-decoration: underline; }
+a.body-link:visited { 
+    color: #333333;
+    text-decoration: underline; }
+a.body-link:hover { 
+    color: #52BAAF;
+    text-decoration: none; }
+    
+.sub-menu {
+    font: 12px  arial, helvetica, sans-serif;
+    color: #666666;
+    line-height: 17px; 
+}
+
+a.sub-menu-link:link { 
+    color: #666666; 
+    text-decoration: none; }
+a.sub-menu-link:active { 
+    color: #666666;
+    text-decoration: none; }
+a.sub-menu-link:visited { 
+    color: #666666;
+    text-decoration: none; }
+a.sub-menu-link:hover { 
+    color: #52BAAF;
+    text-decoration: none; }
+    
+.menu-background {
+    background-image: url('{/literal}{$sitenev}{literal}/kepek/menu-bar.gif');    
+}    
+
+.footer-bar {
+    background-image: url('{/literal}{$sitenev}{literal}/kepek/footer-bar.gif');    
+    background-repeat: no-repeat;
+    background-position: left top
+}
+
+{/literal}
+</style>
+</head>
+
+<body>
+<table width="721" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" colspan="2" align="right" valign="middle"><br /></td>
+  </tr>
+  <tr>
+    <td width="179" height="71" align="left" valign="top"><a href="http://www.lenscity.co.uk/?lang="><img src="http://www.lenscity.co.uk/img/logo-en.gif"  width="179" height="71" border="0" /></a></td>
+    <td width="721" height="71" align="left" valign="top" class="menu-background">
+    
+    <table width="600" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="29" height="26" align="left" valign="bottom">&nbsp;</td>
+        <td align="left" valign="bottom" class="main-menu">
+        
+        <span class="current-main-menu">{$ford.fooldal}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{$sitenev}{$alnev.osszes_termek}" class="main-menu-link">{$ford.osszes_termek}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="{$sitenev}{$alnev.szallitas_es_fizetes}" class="main-menu-link">{$ford.szallitas_es_fizetes}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{$sitenev}{$alnev.altalanos_tudnivalok}" class="main-menu-link">{$ford.altalanos_tudnivalok}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{$sitenev}{$alnev.kapcsolat}" class="main-menu-link">{$ford.kapcsolat}</a>
+            
+            </td>
+        </tr>
+      <tr>
+        <td height="35" align="right" valign="bottom">&nbsp;</td>
+        <td height="30" align="right" valign="bottom">&nbsp;</td>
+        </tr>
+    </table></td>
+  </tr>
+
+</table>
+<table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><table width="779" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="749" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="40" align="left" valign="middle" class="title">Dear
+               {$rendadat.rend_rendnev} !</td>
+            <td width="130" align="left" valign="middle" class="title">{$ford.rendelesi_szam}:
+              {$rend_id} </td>
+              </tr>
+          </table>
+            <table width="749" border="0" align="center" cellpadding="0" cellspacing="0" class="text-table">
+              <tr>
+                <td align="left" valign="top" class="arial-12">Thank you for your order !
+                {if $rendadat.fiz_mod == 1} Kérjük, hogy a végösszeget ({$osszkoltseg|arformat} {$dev}) utalja át az OTP Banknál vezetett 11703020 - 20000057 - 00000000 sz. számlaszámunkra. Kérjuk, hogy a rendelés számát ({$rend_id}) tüntesse fel az átutaláson. A terméket az összeg megérkezése után tudjuk küldeni.{/if}  
+                </td>
+              </tr>
+            </table>          </td>
+        </tr>
+      
+      <tr>
+        <td height="20" align="center" valign="top">&nbsp;</td>
+        </tr>
+      <tr>
+        <td height="30" align="center" valign="top"><table width="749" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td bgcolor="#CCCCCC"><table width="749" border="0" cellpadding="3" cellspacing="1">
+                <tr>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold">Product</td>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold">Eye</td>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold"></td>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold">Price</td>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold">Quantity</td>
+                  <td align="left" valign="top" bgcolor="#F4F4F4" class="arial-12-bold">Total</td>
+                  </tr>
+                  
+{foreach from=$tartalom item=egy}                                   
+<tr>
+  <td align="left" valign="top" bgcolor="#FFFFFF"><span class="arial-12-bold"><a href="{$sitenev}{$egy.termek_alnev}" class="body-link">{$egy.termek_nev}</a></span><br />
+  <span class="arial-12">{$ford.szallitas}: {$egy.termek_szallitas}*</span></td>
+  <td align="left" valign="top" bgcolor="#FFFFFF" class="arial-12">{$ford.szemek[$egy.termek_szem]}
+</td>
+ <td align="left" valign="top" bgcolor="#FFFFFF" class="arial-12">
+    <div><span class="arial-12">{jellemzoki jell="2" jell_id=$egy.jell2}</span></div>
+    <div><span class="arial-12">{jellemzoki jell="1" jell_id=$egy.jell1}</span></div>
+    <div><span class="arial-12">{jellemzoki jell="3" jell_id=$egy.jell3}</span></div>
+    <div><span class="arial-12">{jellemzoki jell="4" jell_id=$egy.jell4}</span></div>
+    <div><span class="arial-12">{jellemzoki jell="5" jell_id=$egy.jell5}</span></div>
+    <div><span class="arial-12">{jellemzoki jell="6" jell_id=$egy.jell6}</span></div>
+  </td>
+  <td align="right" valign="top" bgcolor="#FFFFFF" class="arial-12">{$egy.termek_ar|arformat} </td>
+  <td align="center" valign="top" bgcolor="#FFFFFF" class="arial-12">{$egy.termek_db}</td>
+  <td align="right" valign="top" bgcolor="#FFFFFF" class="arial-12">{$egy.termek_ar*$egy.termek_db|arformat}</td>
+
+</tr>
+{/foreach}                  
+
+                <tr>
+                  <td colspan="6" bgcolor="#FFFFFF" class="arial-12-bold">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="5" bgcolor="#F4F4F4" class="arial-12-bold"><div align="right">Total: {$rendadat.rend_osszesen|arformat} + {$rendadat.rend_szallitasikoltseg|arformat} shipping cost=</div></td>
+                  <td align="right" bgcolor="#F4F4F4" class="arial-12-bold">{$osszkoltseg|arformat}</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" valign="top"><table width="749" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="40" align="left" valign="middle" class="title">{$ford.szallitasi_adatok}</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="30" align="center" valign="top"><table width="749" border="0" align="center" cellpadding="0" cellspacing="0" class="text-table">
+          <tr>
+            <td width="383" align="left" valign="top" class="arial-12"><strong>Delivery address:<br /></strong>
+                {$ford.nev}: {$rendadat.rend_rendnev}<br />
+                {$ford.email}: {$useradat.felh_email}<br />
+                {$ford.telefon}: {$rendadat.rend_telefon}<br />
+                {$ford.megye}: {$rendadat.rend_megye}<br />
+                {$ford.varos}: {$rendadat.rend_varos}<br />
+                {$ford.utca}: {$rendadat.rend_utca}<br />
+                {$ford.iranyitoszam}: {$rendadat.rend_irsz}      
+                        
+                <p class="arial-12-bold">{$ford.szallitas_es_fizetes}:<br />
+                <span class="arial-12">{$szallmod_ki}, {$fizmod_ki}</span></p>
+                
+                {if !empty($rendadat.rend_szamlanev) || !empty($rendadat.rend_szaml_utca) }
+                <span class="arial-12-bold">{$ford.szamlazasi_adatok}:</span><br />
+                {$ford.szamlanev}: {$rendadat.rend_szamlanev}<br />
+                {$ford.megye}: {$rendadat.rend_szaml_megye}<br />
+                {$ford.varos}: {$rendadat.rend_szaml_varos}<br />
+                {$ford.utca}: {$rendadat.rend_szaml_utca}<br />
+                {$ford.iranyitoszam}: {$rendadat.rend_szaml_irsz}              
+                {/if}
+</p></td>
+            <td width="364" align="left" valign="top" class="arial-12"><span class="arial-12-bold"></span><br />
+<br />
+<a href="mailto:office@lencsek.hu" class="body-link"></a> <br />
+<BR><BR> <br />
+
+<br />
+<br />
+<br />
+
+<br />
+ <br />
+
+<br />
+<br />
+<span class="arial-12-bold"></span></td>
+          </tr>
+          <tr>
+            <td height="20" colspan="2" align="left" valign="top" class="arial-12">&nbsp;</td>
+            </tr>
+          <tr>
+            <td colspan="2" align="left" valign="top"><span class="arial-12-bold">{$ford.megjegyzes}:</span>
+              <p class="arial-12">{$rendadat.rend_megjegyzes}</p></td>
+            </tr>
+          
+        </table></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="30" align="center" valign="top"><table width="749" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left" valign="top" class="arial-12"><strong>Thank you for your order !<br>
+            <br>
+            <font size="1">*If you ordered more type of products: please consider the produts' delivery time may differ. We ship this order in one package at the same time and please expect the delivery according to the longest delivery time. 
+Please recheck your lenses power and Base curve in this order.
+ </font></strong><br />              </td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="30" align="center" valign="top">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+
+</table>
+<table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="712" height="42" align="left" valign="top" background="http://www.lenscity.co.uk/img/footer-bar.gif"><table height="42" border="0" cellpadding="0" cellspacing="0" class="signature">
+      <tr>
+        <td width="17" height="23" align="left" valign="bottom">&nbsp;</td>
+        <td align="left" valign="bottom">copyright &copy;          2010
+          www.lenscity.co.uk</td>
+      </tr>
+      <tr>
+        <td height="19" align="left" valign="bottom">&nbsp;</td>
+        <td height="19" align="left" valign="bottom" class="copyright"><a href="{$sitenev}{$alnev.adatvedelmi}" class="copyright-link">{$ford.adatvedelmi_nyilatkozat}</a></td>
+      </tr>
+    </table></td>
+    <td width="173" align="left" valign="top"><a href="{$sitenev}"><img src="{$sitenev}/kepek/footer-logo-en.gif"  width="173" height="42" border="0" /></a></td>
+  </tr>
+
+</table>
+</body>
+</html>

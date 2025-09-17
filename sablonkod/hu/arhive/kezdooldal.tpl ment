@@ -1,0 +1,98 @@
+<table align="center" border="0" cellpadding="0"
+cellspacing="0" width="691">
+  <tbody>
+    <tr>
+      <td class="title" align="left" height="40"
+      valign="middle">{$ford.udvozoljuk}</td>
+      <td class="cart" align="right" valign="middle"
+      width="100"><a href="{$sitenev}{$alnev.kosar}" class="body-link">{$ford.kosar}</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="text-table" align="center" border="0" cellpadding="0" cellspacing="0" width="691">
+      <tbody>
+        <tr>
+          <td class="arial-12" align="left"
+            valign="top">Website-unk kontaktlencsék, ápolószerek és
+            egyéb kiegészítők értékesítésével foglalkozik.
+
+            <p>Nálunk megtalálhatóak a jelentősebb gyártók főbb
+            termékei, melyeket alacsony áron és gyors
+            kiszolgálással értékesítünk. <br />
+            <br />
+            <br />
+            Az ország összes egészségpénztárával kapcsolatban
+            állunk, többek közt: <br />
+            <img src="kepek/axa.jpg" alt="AXA" border="0" height="54"
+            width="61" /><img src="kepek/otp.jpg" alt="OTP"
+            border="0" height="43" width="202" /> <img
+            src="kepek/kh.jpg" alt="K&amp;H" border="0" height="48"
+            width="52" />    <img src="kepek/mkb.jpg" alt="MKB"
+            border="0" height="47" width="49" /> <img
+            src="kepek/wellness.jpg" alt="Ticket wellness" border="0"
+            /><br />
+            termékeink teljeskörűen elszámolhatóak.</p>
+          </td>
+        </tr>
+      </tbody>
+</table>
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="691">
+  <tbody>
+    <tr>
+      <td class="title" align="left" height="40"
+      valign="middle">{$ford.nepszeru_termekek}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="text-table" align="center" border="0" cellpadding="0" cellspacing="0" width="691">
+  <tbody>
+    <tr>
+      <td colspan="1" class="arial-12" align="left" valign="top">
+        
+        {foreach from=$nepszeru_termekek item=egy_termek}
+          {include file="nezetek/termek_lista_egy_termek.tpl"}
+        {/foreach}  
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+  <td height="60" width="120" align="right" valign="middle">
+  <!-- ÁRUKERESŐ.HU CODE - PLEASE DO NOT MODIFY THE LINES BELOW -->
+<div style="background: transparent; text-align: center; padding: 0; margin: 0 auto; width: 120px">
+<a title="Árukereső.hu" href="http://www.arukereso.hu/" style="display: block;border:0; padding:0;margin:0"><img style="padding: 0; margin:0; border:0" alt="Árukereső.hu" src="http://static.arukereso.hu/hu/logo-120.png"/></a>
+<a title="Árukereső, a hiteles vásárlási kalauz" style="line-height:16px;font-size: 11px; font-family: Arial, Verdana; color: #000" href="http://www.arukereso.hu/">Árukereső, a hiteles vásárlási kalauz</a>
+</div>
+<!-- ÁRUKERESŐ.HU CODE END -->
+  
+  </td>
+  <td width="200" height="60" align="right" valign="middle">
+  
+  <a href="http://www.shopmania.hu" title="Látogassa meg lencsék.hu-t a ShopMania weboldalon" onclick="target='_blank'; window.open('http://www.shopmania.hu/?m=241'); return false;" onkeypress="target='_blank'"><img src="http://www.shopmania.hu/img/cert/shopmania-store-hu.gif" style="border: 0;" alt="Látogassa meg lencsék.hu-t a ShopMania weboldalon" /></a>
+  
+  <a href="http://www.argep.hu/" target="_blank" title="www.argep.hu - az árösszehasonlító oldal"><img src="http://www.argep.hu/bilder/ArGepLogoSmall.jpg" width="75" height="35" border="0"></a>
+  
+  
+  </td><td align="center">
+  
+
+
+<!-- ÁRUKERESŐ.HU - PLEASE DO NOT MODIFY THE LINES BELOW -->
+<div style="background: transparent; text-align: center; padding: 0; margin: 0 auto;">
+<a title="Árukereső, a hiteles vásárlási kalauz" href="http://www.arukereso.hu/"><img src="http://image.arukereso.hu/trustedbadge/31632-150x74-9a24a16dac8c1c0773b7073d3946d681.png" alt="Árukereső, a hiteles vásárlási kalauz" style="border-style:none;" /></a>
+</div>
+<!-- ÁRUKERESŐ.HU CODE END -->
+</td><td>
+  </td>
+
+  
+</tr>
+</table>

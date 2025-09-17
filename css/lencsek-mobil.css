@@ -1,0 +1,80 @@
+
+
+
+
+
+/* 520px kisebb */
+@media screen and (max-width:520px) {
+    
+    .lens_selection .table-responsive h4 { text-align:center; padding-top:20px;}
+    
+    .tooltip {width: 300px !important; }
+    .top-brand {padding:20px 0;}
+    .top-brand ul li {
+        display: inline-block;
+        padding: 9px;
+        width: 50%;
+        float: left; height: 50px;
+    }
+
+    .mobmb10 {margin-bottom:10px;}
+    .brand-menu .navbar-nav > li {width: 50%; float: left;}
+    .product-tile a {height:220px;}
+
+    
+    .steps_sec .nav-justified li {
+        display: table-cell;
+        height: 50px;
+        padding: 8px 25px 5px;
+        width: 1%; float: none;
+    }
+    
+    
+    .homeBanner #home-slide .owl-wrapper-outer .owl-wrapper .owl-item .item .banner-content .banner-middle {background: #fff none repeat scroll 0 0;
+        color: #555;
+        display: block; padding: 10px 20px; }
+    .owl-carousel1 .owl-wrapper {width:auto !important;}
+    .owl-carousel1 .owl-controls {display:none !important;}
+    .owl-carousel1 .owl-wrapper .item img {display:none;}
+    .owl-carousel1 .item h4 {position:inherit; padding: 7px 0; background: none; color: inherit; font-weight:normal; font-size: 16px;}
+    .owl-carousel1 .item {margin:5px 0 0 0 ;}
+    .owl-carousel1 .item > a {
+        background: #f1f1f1 none repeat scroll 0 0;
+        display: block; color:#555;
+    }
+    .owl-carousel1 .item > a:hover {
+        background: #18aac9 none repeat scroll 0 0;
+        display: block; color: #fff; text-decoration: none;
+    }
+    .brands ul li {display:block;}
+    .brands ul li:last-child {margin-right:0; float: left}
+    .scroll-btn {display: none !important;}
+    .brand-logo {top:2px; margin-top: 0; right:3px;}
+    .owl-carousel2 .item h4 {font-size:16px}
+    .owl-carousel2 .item h4 small span {font-size:12px;}
+    .homeBanner #home-slide .owl-wrapper-outer .owl-wrapper .owl-item .item .banner-content {height:auto;}
+
+    .booking_for {padding:10px;}
+    .product-pg-banner {height:165px;}
+
+    /*.header .navbar .navbar-nav > li > .contact-btn { display:none; }*/
+    #kapcs_fent { display: none; }
+    #szall_fent { display: none; }
+    
+    
+} /* max-width:520px vége */
+
+
+
+
+
+/* kisebb mint 337px */
+@media screen and (max-width:337px) {
+
+    /*.nav-top {right:inherit;}
+    
+    .navbar-brand {
+        padding: 3px 2px;
+    }*/
+    
+} /* max-width:337px */

@@ -1,0 +1,8 @@
+Ha elégedett webshopunkkal, kérjük szavazzon ránk az <br />
+Ország Boltja versenyen a <span style='color:blue'>Szépség és egészség </span>kategóriában!<br /><br />
+{literal}
+<!-- SHOP OF THE COUNTRY CODE BEGIN-->
+<script type="text/javascript">/*<![CDATA[*/var __akn=new Date();var __ake=new Date(1373839260000);var __akl=Math.ceil((__ake.getTime()-__akn.getTime())/86400000); if(__akl<=0){document.write('<a href="//www.orszagboltja.hu/szavazas/24" target="_blank"><img src="//assets1.orszagboltja.hu/soc/widget/hu/vote-banner-220x50.png?p=24" style="border-style:none;" alt="Az ország boltja 2013 - szavazok" /><\/a>');}else{document.write('<div style="margin:0; padding:0; width:220px;height:50px;background:url(\'//assets1.orszagboltja.hu/soc/widget/hu/vote-banner-220x50-1.png?p=24\');color:#FFF;font-size:16px;font-weight:bold;font-family:Arial,sans-serif;text-align:center;overflow:hidden;"><a href="//www.orszagboltja.hu/szavazas/24" target="_blank" style="display:block; margin:0; padding:4px 80px 0 5px; color:#FFF; text-decoration:none;">m&eacute;g <span style="font-size:18px; color:#fe5e0d;">'+__akl+'<\/span> nap<br \/>a szavaz&aacute;sig<\/a><\/div>');}/*]]>*/</script>
+<!-- SHOP OF THE COUNTRY CODE END-->
+{/literal}
+<br /><br />

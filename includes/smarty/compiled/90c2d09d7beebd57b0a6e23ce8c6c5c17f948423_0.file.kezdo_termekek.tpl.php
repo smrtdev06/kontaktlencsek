@@ -1,0 +1,79 @@
+<?php
+/* Smarty version 4.3.0, created on 2023-01-27 13:30:45
+  from '/var/www/vhosts/kontaktlencsek.hu/httpdocs/sablonkod/new/kezdo_termekek.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_63d3d205a5f4e3_91304415',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '90c2d09d7beebd57b0a6e23ce8c6c5c17f948423' => 
+    array (
+      0 => '/var/www/vhosts/kontaktlencsek.hu/httpdocs/sablonkod/new/kezdo_termekek.tpl',
+      1 => 1526551123,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:new/termek_lista_egy_termek.tpl' => 1,
+  ),
+),false)) {
+function content_63d3d205a5f4e3_91304415 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="row">
+    <div class="col-md-12">
+        <a href="#" class="btn btn-filter" id="showFilter"><i class="fa fa-filter" aria-hidden="true"></i> Szűrők </a>
+    </div>
+
+    <div class="clearfix"></div>
+        
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['nepszeru_termekek']->value, 'egy_termek');
+$_smarty_tpl->tpl_vars['egy_termek']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['egy_termek']->value) {
+$_smarty_tpl->tpl_vars['egy_termek']->do_else = false;
+?>
+        <?php $_smarty_tpl->_subTemplateRender("file:new/termek_lista_egy_termek.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
+?>
+    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?> 
+        
+    <div class="clearfix"></div>
+
+    
+    <div id="stickyheader">
+        <div class="filterByValue">
+            <div class="col-md-12">
+              <!--select class="form-control select-block">
+                <option selected="" disabled="" value="">Sort By</option>
+                <option value="oakleyeuRelevanceSort">Relevance</option>
+                <option selected="" value="oakleyeuName-ascSort">Name (ascending) rhherihu</option>
+                <option value="oakleyeuName-descSort">Name (descending)</option>
+                <option value="oakleyeuPriceValue-ascSort">Price (lowest first)</option>
+                <option value="oakleyeuPriceValue-descSort">Price (highest first)</option>
+                <option value="oakleyeuNewest-descSort">Newest</option>
+                <option value="oakleyeuBestSellers-booleanSort">Best Sellers</option>
+
+
+              </select-->
+
+              <!--
+              <ul class="pagination pull-right">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+              </ul>
+              -->
+              <div class="clearfix"></div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div><?php }
+}

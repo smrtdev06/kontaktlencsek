@@ -1,0 +1,614 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: normal;
+	background-color: #000;
+	color: #49433f;
+}
+
+img {
+  border: none;
+	outline: none;  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;  
+}
+
+.alert2{
+    font-weight: bold;
+    font-size: 12;
+    color: #ff0000;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+.clear {
+  clear: both!important;
+  font-size: 0px!important;
+  line-height: 0px!important;
+  height: 0px!important;
+  margin: 0px!important;
+  padding: 0px!important;
+}
+
+a:link, a:visited, a:active, a:hover {
+	outline: none;
+  text-decoration: none;	
+}
+
+#container {
+	width: 1003px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #4a3c31;
+}
+
+/* Header formázások innen */
+.header {
+  display: block;
+	height: 119px;
+	margin: 0px auto;
+	background: url(../images/header_bg.jpg) no-repeat left top;	
+}
+  .header_left {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header_right {
+    float: right;
+    text-align: right;
+    margin-right: 20px;    
+  }
+  h2.logo {
+  	width: 227px;
+  	height: 66px;
+    position: relative;
+  	margin: 0 0 0 50px;
+  	color: #fff;
+  }
+  h2.logo span {
+    display: block;
+  }
+  h2.logo span.link {
+  	width: 227px;	
+  	height: 66px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+  	background: url(../images/szemuvegek_logo.gif) no-repeat;
+  } 
+  h2.logo p{
+    margin: 0px;
+  }   
+  h2.logo a{
+    cursor:pointer;
+    cursor:hand;
+  }    
+  .small {
+    font-size: 10px;
+  }
+  
+ul.submenus {
+  color: #cac6c1;
+  margin: 15px 0 0;
+  padding: 0px;
+}   
+  ul.submenus li {
+    display: inline;
+    margin: 0 2px;
+  }
+  ul.submenus li a {
+    color: #cac6c1; 
+	  text-decoration: none;
+  }
+    ul.submenus li a:hover {
+      color: #46b7cb; 
+    }
+    
+/* Fõmenü formázásai innen */
+.menu_active {
+  font-size: 16px;
+  color: #80766e;
+}
+
+ul.mainmenu {
+  padding: 0px;   
+  margin: 13px 0 0 20px;    
+}
+  ul.mainmenu li {
+    float: left;
+    margin-right: 1px;
+  }
+  ul.mainmenu li a {
+    display: block;
+    font-size: 16px;	  
+  	height: 40px;   
+   	line-height: 40px;   
+    padding: 0 15px;
+    _ width: 70px; 
+    color: #fff;
+    background-color: #46b7cb;
+	  text-decoration: none!important;
+  }
+  ul.mainmenu li a:hover {
+    background-color: #fff!important;
+    color: #80766e!important;
+  }
+  	ul.mainmenu li.active a{
+  		background-color: #fff!important;
+    	color: #80766e!important;
+  	}
+  
+  .english {
+    margin-right: 0px!important;
+  }
+  
+.kosar {
+  margin-top: 10px;
+  color: #fff;
+}  
+  .kosar img, .kosar p {
+    float: right;   
+  } 
+  .kosar img {
+    margin-right: 10px;    
+  }
+  .kosar p {
+    * line-height: 42px;
+  }
+  .kosar p span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #46b7cb;
+    margin: 0 1px;
+  }
+   
+form.termekkereso {
+  margin: 8px 0 0;  
+  color: #fff;  
+}  
+  .termekkereso span {
+    float: right;
+    margin-top: 4px;
+    padding-right: 3px;  
+  }
+  .termekkereso input {
+    float: right;
+    width: 190px;
+    height: 17px;
+    padding-top: 2px;
+    border: 1px solid #46b7cb;
+    color: #80766e;
+    text-indent: 5px;
+  } 
+  .submit_btn {
+    float: right;
+  	width: 22px!important;	
+  	height: 22px!important;
+    display: block;
+    margin-left: 3px;
+  	background: url(../images/submit_btn.gif) no-repeat;
+    border: none!important;   
+    cursor: pointer; 
+    cursor: hand;
+  }
+/* Header vége */
+
+/* Tartalom formázásai */
+
+.content {
+  margin: 0 10px;
+  _ margin-top: -13px;
+  padding: 10px 10px 15px 10px;
+  background-color: #fff;
+}
+
+.left_box, .right_box {
+  float: left;
+}
+
+.left_box {
+  width: 155px;
+  background-color: #f5f4f3;
+  text-align: left;
+}
+
+.right_box {
+  width: 795px;
+  margin-left: 10px;
+}
+
+p.actual_category {
+  background-color: #769d18;
+  height: 27px;  
+  line-height: 27px;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+}
+
+a.new {
+  display: block;
+  color: #46b7cb; 
+  height: 35px;  
+  line-height: 35px;
+  padding-left: 15px;
+  background: url(../images/balmenu_nyil.gif) no-repeat 0 5px; 
+  border-bottom: 1px dashed #d0d0cf;
+}
+
+.category {
+  position: relative;
+  display: block;
+  color: #46b7cb; 
+  height: 35px;  
+  line-height: 35px;  
+  padding-left: 15px;  
+  margin: 0px;
+  font-size: 16px;
+  /*background: url(../images/balmenu_nyil.gif) no-repeat 0 5px;*/  
+}
+
+.category span {
+  position: absolute;
+  top: 13px;
+  right: 6px;
+	width: 13px;	
+	height: 12px;
+  display: block;
+  /*background: url(../images/x_icon.gif) no-repeat;*/
+}
+.x_active {
+   /*background: url(../images/x_icon_active.gif) no-repeat!important;*/
+}
+
+ul.items {
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #d0d0cf;  
+}
+  ul.items li a {
+    color: #80766e;
+    display: block;
+    background: url(../images/items_icon.gif) no-repeat 5px 1px;
+    padding-left: 22px; 
+    margin: 2px 0; 
+    _ height: 10px; 
+  }
+  ul.items li a:hover {
+    color: #46b7cb;
+  }  
+  ul.items li.item_active a {
+    color: #769d18;  
+    font-weight: bold;
+    background: url(../images/items_icon_active.gif) no-repeat 5px 1px;    
+  }
+
+ul.lepesek li a {
+  color: #ffffff;
+}
+
+.aruhazunkrol_title {
+  color: #7676be;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 5px;  
+  margin-top: 10px;
+}
+
+.aruhazunkrol {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.aruhazunkrol img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.aruhazunkrol a {
+  color: #46b7cb;
+  float: right;
+  text-align: right; 
+  text-decoration: underline;
+}
+.aruhazunkrol a:hover {
+  text-decoration: none;
+}
+
+.akciobox {
+  border: 1px dashed #8f6199;
+  padding: 5px;   
+  * height: 190px;
+}
+
+.akciobox_header_left, .akciobox_header_bg, .akciobox_header_right {
+  float: left;
+}
+ 
+.akciobox_header_left {
+  width: 18px;
+	height: 35px;
+  display: block;	
+  margin-top: 4px;
+  background: url(../images/akciosbox_header_left.gif) no-repeat;
+}
+.akciobox_header_bg {
+  position: relative;
+  background-color: #8f6199;
+  display: block;
+  margin-top: 4px;  
+  width: 755px;
+	height: 35px;  
+	color: #fff;
+	font-size: 15px;	
+	line-height: 35px; 
+	text-indent: 8px;
+  text-align: left;  
+}
+  a.tovabbi_akciok {
+    position: absolute;
+    top: 0px;
+    right: 2px;  
+    font-size: 11px;
+    color: #fff;
+    text-decoration: underline;    
+  }
+  
+.akciobox_header_right {
+  width: 9px;
+	height: 39px;
+  display: block;	
+  background: url(../images/akciosbox_header_right.gif) no-repeat;
+}
+
+.termek1 {
+  float: left;
+  position: relative;
+  display: block;
+  width: 252px;
+	height: 145px;
+	background: url(../images/akcios_termek_bg.gif) no-repeat bottom right;
+  border-right: 1px dashed #bdbcbc;
+  margin: 5px 10px 0 0px;
+}
+  .termek1 img {
+    margin: 10px 0 0 5px;
+    width: 150px;
+  	height: 75px;
+  }
+  .marka {
+    position: absolute;
+    margin: 0px!important;
+    top: 7px;
+    right: 5px; 
+    width: auto!important;
+  	height: auto!important;    
+  }
+  .ar_regi, .ar {
+    position: absolute;
+    right: 5px;  
+    width: 80px;  
+    text-align: center;  
+  }
+  .ar_regi {
+    text-decoration: line-through;
+    bottom: 36px;
+  }
+  .ar {
+    bottom: 20px;
+    font-size: 16px;
+    color: #769d18;
+    font-weight: bold;   
+  }
+  .tipus, .cikkszam {
+    position: absolute;
+    left: 5px;  
+  }
+  .tipus {
+    bottom: 15px;
+    color: #46b7cb;
+    font-size: 14px;
+    font-weight: bold;  
+  }
+  .cikkszam {
+    bottom: 3px; 
+    color: #80766e;
+  }
+  .last {
+    margin: 0px!important;
+    border: none!important;
+  }
+  .akcios_last {
+    margin: 5px 0 0!important;
+    border: none!important;
+  }  
+
+.rendeles_menete, .szallitas, .fizetes, .gyik, .penztarak {
+  float: left;
+  width: 385px;
+  margin-right: 20px;
+}
+  .rendeles_menete p, .szallitas p, .fizetes p, .gyik p, .penztarak p {
+    color: #7676BE;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .rendeles_menete img, .szallitas img, .fizetes img, .gyik img{
+    float: left;
+  }
+  .rendeles_menete a, .szallitas a, .fizetes a, .gyik a {
+    float: right;
+    color: #46b7cb;
+    text-align: right;    
+    font-size: 11px;
+    padding-right: 10px;
+    text-decoration: underline!important;
+  }
+  .rendeles_menete a:hover, .szallitas a:hover, .fizetes a:hover, .gyik a:hover {
+    text-decoration: none!important;
+  }
+  
+ol {
+  float: left;  
+  margin: 0px;
+  padding-left: 40px;
+  width: 265px;
+}
+.szallatvet_index {
+  list-style:none;
+  padding-left: 20px;  
+  width: 290px;  
+}
+  .bekezdes {
+    margin-top:5px;
+    margin-left:15px;
+  }
+  
+.penztarak {
+  margin-top: 10px;
+  width: auto!important;
+}
+.penztarak img {
+  border: 1px solid #dddddd;
+  padding: 2px;
+  margin-right: 4px;
+}
+    
+.nomargin {
+  margin-right: 0px!important;
+} 
+   
+#footer {
+  height: 115px;
+  color: #c7c3be;  
+}  
+
+.hirlevel, .hirlevel from, .hirlevel img {
+  float: left; 
+}
+.hirlevel {
+  margin-left: 20px;
+  _ margin-left: 10px;
+  width: 345px;
+}
+  .hirlevel img {
+    margin-right: 10px;
+  }
+  .hirlevel h3, .siteadatok h3 {
+  	font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  .hirlevel p {
+    margin: 5px 0;
+    font-size: 11px;    
+  }  
+  
+.hirlevel input {
+  border: 1px solid #46B7CB;
+  color: #80766E;
+  float: left;
+  height: 16px;
+  padding-top: 2px;
+  text-indent: 5px;
+  width: 180px;
+}  
+
+.feliratkozas_btn {
+ 	background: url(../images/feliratkozas_btn.gif) no-repeat;
+  border: none!important;
+  width: 86px!important;
+  height: 21px!important;  
+  margin-left: 6px;
+  cursor: pointer;
+  cursor: hand;
+}
+a.vissza_btn {
+  color: #46B7CB;
+  float:right;
+  margin-bottom: 5px;
+}
+  a.vissza_btn:hover {
+    text-decoration: underline;
+  }
+  
+.kapcsolat {
+  margin-left: 0px!important;
+  padding-top: 30px;
+  font-size: 11px;
+  line-height: 18px;
+}
+  .kapcsolat a {
+    color: #fff;
+    margin-left: 19px;    
+  }
+  .kapcsolat a:hover {
+    text-decoration: underline;    
+  }
+  .kapcsolat span {
+    color: #fff;
+    margin-left: 10px;
+  }
+  .web {
+    margin-left: 25px!important;
+  }
+.siteadatok {
+  float: left;
+  width: 180px;
+  margin-left: 40px;
+}
+  .siteadatok ul {
+    margin: 0px;
+    padding: 0px;
+  } 
+  
+.keszitok {
+  width: 190px;
+  font-size: 11px;  
+  margin-left: 35px!important;
+}  
+
+.keszitok span, .keszitok img {
+   float: left; 
+} 
+.keszitok p {
+  margin: 6px 0;
+  * margin: 0px;
+} 
+
+.maximart {
+  margin-left: 20px;
+}
+.masterwebdesign {
+  margin-left: 7px;
+}
+
+.sortav {
+  margin-top: 10px!important;
+}
+
+ul.lepeses5 li {
+  width: 129px;
+}
+
+.leiratkozasBg{
+	background: url(../images/leliratkozas_btn.gif) no-repeat!important;
+}
+
+.newlettermsg {
+  text-align: center;
+  color: #fc0;
+  font-size: 11px;
+  padding-right:35px;  
+}

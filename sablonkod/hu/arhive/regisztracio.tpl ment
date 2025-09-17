@@ -1,0 +1,347 @@
+<table width="721" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+        
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="20" colspan="2" align="left" valign="middle" class="arial-11">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="24" align="left" valign="middle" class="title">{$ford.vasarlas}</td>
+    <td width="100" align="right" valign="middle" class="cart"><a href="{$alnev.kosar}" class="body-link">{$ford.kosar}</a> </td>
+  </tr>   
+</table>
+        
+{literal}
+<script language="javascript">
+
+function urlap_ellenorzes(f) {
+    ok = 1;
+
+    if( !f.elements["feltetelek"].checked )
+    {
+        ok = 0;
+        uzenet = '{/literal}{$ford.feltetel_elfogadas}{literal}';
+    }  
+    
+    
+    if( ok == 0 ) {
+        alert(uzenet);
+   } else {
+        f.submit();
+   }
+}
+
+</script>
+
+<script type="text/javascript" src="includes/overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+{/literal}
+        
+        
+<form id="urlap" name="urlap" method="post" action="{$sitenev}{$alnev.regisztracio}" onsubmit="return urlap_ellenorzes(this);">
+<input type="hidden" name="kuldve2" value="1">
+<input type="hidden" name="q" value="regisztracio">
+<input type="hidden" name="felh_email" value="{$fadat.felh_email}">
+<input type="hidden" name="felh_jelszo" value="{$fadat.felh_jelszo}">
+
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0" class="text-table">
+              <tr>
+                <td colspan="4" align="left" valign="top" class="arial-12"><table width="671" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="left" valign="top" class="arial-12"><table width="671" border="0" align="center" cellpadding="3" cellspacing="0">
+                          <tr>
+                            <td width="120" bgcolor="#F4F4F4" class="arial-12-bold">
+    {if $bolt_id > 0}
+        {$ford.szemelyes_adatok}
+    {else}
+        {$ford.szallitasi_cim}
+    {/if} :</td>
+                          </tr>
+
+                          <tr>
+                            <td align="left" valign="top" bgcolor="#FFFFFF">
+                            
+                            
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="arial-12">
+                            
+                                <tr>
+                                  <td height="30" colspan="2" bgcolor="#FFFFFF">
+                                  {if $vanhiba } {$ford.kerjuk_toltseki|hibakiiras}<br /><br /> {/if}
+                                  {$ford.szallitasi_szoveg}<br>
+&nbsp;</td>
+                                </tr>
+                                
+                                 <tr>
+                                  <td width="150" height="25" bgcolor="#FFFFFF">{$ford.email}:</td>
+
+                                  <td height="25" bgcolor="#FFFFFF"> {$fadat.felh_email}</td>
+                                </tr>
+                                
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.csaladnev }
+                                    <span class="error">{$ford.csaladnev}:</span>
+                                  {else}
+                                    {$ford.csaladnev}:
+                                  {/if}
+                                  </td>
+
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_csaladnev" type="text" class="textfield-specs" id="felh_csaladnev" value="{$fadat.felh_csaladnev}" size="30" />
+                                    *</td>
+                                </tr>
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.keresztnev }
+                                    <span class="error">{$ford.keresztnev}:</span>
+                                  {else}
+                                    {$ford.keresztnev}:
+                                  {/if}
+                                  </td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_keresztnev" type="text" class="textfield-specs" id="felh_keresztnev" value="{$fadat.felh_keresztnev}" size="30" />
+                                  *</td>
+
+                                </tr>
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.telefon }
+                                    <span class="error">{$ford.telefon}:</span>
+                                  {else}
+                                    {$ford.telefon}:
+                                  {/if}
+                                  
+                                  </td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_telefon" type="text" class="textfield-specs" id="felh_telefon" value="{$fadat.felh_telefon}" size="30" />
+                                    *</td>
+                                </tr>
+                                {if 1==0 }
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.megye }
+                                    <span class="error">{$ford.megye}:</span>
+                                  {else}
+                                    {$ford.megye}:
+                                  {/if}
+                                  </td>
+
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  <input name="felh_megye" type="text" class="textfield-specs" id="felh_megye" value="{$fadat.felh_megye}" size="30" />
+                                    *</td>
+                                </tr>
+                                {/if}
+                                <tr>
+
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.varos }
+                                    <span class="error">{$ford.varos}:</span>
+                                  {else}
+                                    {$ford.varos}:
+                                  {/if}
+                                  </td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_varos" type="text" class="textfield-specs" id="felh_varos" value="{$fadat.felh_varos}" size="30" />
+                                    *</td>
+
+                                </tr>
+                                
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.utca }
+                                    <span class="error">{$ford.utca}:</span>
+                                  {else}
+                                  {$ford.utca}:
+                                  {/if}
+                                  </td>
+
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_utca" type="text" class="textfield-specs" id="felh_utca" value="{$fadat.felh_utca}" size="30" /> *</td>
+                                </tr>
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  {if $reghiba2.irsz }
+                                    <span class="error">{$ford.iranyitoszam}:</span>
+                                  {else}
+                                    {$ford.iranyitoszam}:
+                                  {/if}
+                                  </td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_irsz" type="text" class="textfield-specs" id="felh_irsz" value="{$fadat.felh_irsz}" size="30" />                                    
+                                    *</td>
+                                </tr>
+                                
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF" valign="top">{$ford.egpenztar}: </td>
+                                  <td height="25" bgcolor="#FFFFFF">
+                                      <select name="felh_egpenztar" size="1" onchange="egp_feltoltes(this)" class="arial-11">
+                                    <!-- <option value="">Válassza ki egészségpénztárát !</option> -->
+                                    {foreach from=$egpenztarak item=egy_penztar}
+                                      <option value="{$egy_penztar.penztar_id}" {if $fadat.felh_egpenztar==$egy_penztar.penztar_id}SELECTED{/if}>{$egy_penztar.penztar_nev}</option>
+                                    {/foreach}
+                                  </select> <a href="javascript:void(0);" onmouseover="return overlib('Kiválaszthatja a pénztári tagságot!',OFFSETX, 15, OFFSETY,-15,HAUTO,VAUTO,CAPTION,'Egészségpénztár');" onmouseout="return nd();"><img src="kepek/kerdojel.gif" border="0"></a>
+
+                                  
+                                  <div id="egp_box" {if $fadat.felh_egpenztar==0} style="display:none;"{/if} >
+                                  <br />
+                                  <table class="textfield-specs">
+                                  <tr>
+                                    <td height="25" bgcolor="#FFFFFF">Tag neve: </td>
+                                    <td height="25" bgcolor="#FFFFFF"><input name="felh_tagnev" type="text" class="textfield-specs" id="felh_tagnev" value="{$fadat.felh_tagnev}" size="30" /></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="25" bgcolor="#FFFFFF">Azonosító: </td>
+                                    <td height="25" bgcolor="#FFFFFF"><input name="felh_egazon" type="text" class="textfield-specs" id="felh_egazon" value="{$fadat.felh_egazon}" size="30" /></td>
+                                  </tr>
+                                  </table>
+                                  </div>
+                                  
+                                  </td>
+                                </tr>
+
+                            </table>
+                            
+                            </td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#FFFFFF">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#F4F4F4" class="arial-12-bold">{$ford.szamlazasi_adatok}:</td>
+                          </tr>
+
+                          <tr>
+                            <td align="left" valign="top" bgcolor="#FFFFFF">
+                            
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="arial-12">
+                            
+                                <tr>
+                                  <td height="30" colspan="2" bgcolor="#FFFFFF">{$ford.szamlazasi_szoveg}<br>
+&nbsp;</td>
+                                </tr>
+                                
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">{$ford.szamlanev}:</td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_szamlanev" type="text" class="textfield-specs" id="felh_szamlanev" value="{$fadat.felh_szamlanev}" size="30" /></td>
+
+                                </tr>
+                                {if 1==0 }
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">{$ford.megye}:</td>
+
+                                  <td height="25" bgcolor="#FFFFFF">
+                                  <input name="felh_szmegye" type="text" class="textfield-specs" id="felh_szmegye" value="{$fadat.felh_szmegye}" size="30" /></td>
+                                </tr>
+                                {/if}
+                                <tr>
+
+                                  <td height="25" bgcolor="#FFFFFF">{$ford.varos}:</td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_szvaros" type="text" class="textfield-specs" id="felh_szvaros" value="{$fadat.felh_szvaros}" size="30" /></td>
+
+                                </tr>
+                                
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">{$ford.utca}:</td>
+
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_szutca" type="text" class="textfield-specs" id="felh_szutca" value="{$fadat.felh_szutca}" size="30" /></td>
+                                </tr>
+                                <tr>
+                                  <td height="25" bgcolor="#FFFFFF">{$ford.iranyitoszam}: </td>
+                                  <td height="25" bgcolor="#FFFFFF"><input name="felh_szirsz" type="text" class="textfield-specs" id="felh_szirsz" value="{$fadat.felh_szirsz}" size="30" /></td>
+                                </tr>                              
+                                
+                                <tr><td colspan="2">&nbsp;</td></tr>
+                                
+                                <tr>
+                                  <td valign="top">{$ford.megjegyzes}:</td><td bgcolor="#FFFFFF"><textarea name="felh_megjegyzes" cols="55" rows="3" class="textfield-specs" id="felh_megjegyzes">{$fadat.felh_megjegyzes}</textarea></td>
+
+                                </tr>
+<tr>
+  <td bgcolor="#ffffff" height="25" colspan="2">
+    &nbsp;<input type="checkbox" name="feltetelek" value="1">
+    {if $reghiba2.feltetel }
+        <span class="error">{$ford.feltetelek_elfogadasa} *</span>
+    {else}
+        <a style="text-decoration:none; ">{$ford.feltetelek_elfogadasa} </a> *
+    {/if}
+  </td>
+</tr>
+
+<tr>
+  <td bgcolor="#ffffff" height="25" colspan="2">
+    &nbsp;<input type="checkbox" name="hirlevel" value="1" checked="checked">{$ford.kerek_hirlevelet}
+  </td>
+</tr>
+
+
+    <tr>
+    <td height="30" bgcolor="#FFFFFF" class="arial-11" colspan="2"> * {$ford.mezok_kotelezok} </td>
+    </tr>
+</table>
+                            
+                            
+                            
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="30" bgcolor="#FFFFFF">
+
+                            <table width="665" border="0" align="center" cellpadding="3" cellspacing="0">
+                                <tr>
+                                  <td width="600" height="30" align="left" valign="middle">&nbsp;</td>
+                                  <td width="110" align="right" valign="middle" class="fw"><a href="javascript:urlap_ellenorzes(document.urlap)" class="body-link"> {$ford.adatok_mentese}</a></td>
+                                </tr>
+                            </table>
+                            
+                            </td>
+                          </tr>
+
+                      </table></td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+                    </form>
+          </td>
+      </tr>
+      
+      <tr>
+
+        <td height="30" align="center" valign="top">&nbsp;</td>
+      </tr>
+    </table>
+    
+{literal}
+
+<script language="javascript">
+
+function egp_feltoltes(v) {
+    var penztarak = {/literal}{$penztarak}{literal};
+
+    if( v.value > 1 ) {
+        document.getElementById("egp_box").style.display="block";
+        
+        document.getElementById("felh_tagnev").value = document.getElementById("felh_csaladnev").value+" "+document.getElementById("felh_keresztnev").value;
+        
+        document.getElementById("felh_szamlanev").value = penztarak[v.value].penztar_nev;
+        document.getElementById("felh_szvaros").value = penztarak[v.value].penztar_varos;
+        document.getElementById("felh_szirsz").value = penztarak[v.value].penztar_irsz;
+        document.getElementById("felh_szutca").value = penztarak[v.value].penztar_utca;
+        
+        
+    } else {
+        document.getElementById("egp_box").style.display="none";
+        
+        document.getElementById("felh_tagnev").value = "";
+        document.getElementById("felh_egazon").value = "";
+        
+        document.getElementById("felh_szamlanev").value = "";
+        document.getElementById("felh_szvaros").value = "";
+        document.getElementById("felh_szirsz").value = "";
+        document.getElementById("felh_szutca").value = "";
+    }
+    
+}
+
+
+</script>
+
+{/literal}

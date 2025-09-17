@@ -1,0 +1,376 @@
+﻿
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0">
+  
+  <tr>
+    <td height="24" align="left" valign="middle" class="title">{$ford.szallitas_es_fizetes}</td>
+    <td width="100" align="right" valign="middle" class="cart"><a href="{$sitenev}{$alnev.kosar}" class="body-link">
+	{$ford.kosar}</a></td>
+   
+  </tr>
+</table>
+
+        
+          <table width="691" border="0" align="center" cellpadding="0" cellspacing="0" class="text-table">
+
+            <tr>
+
+              <td colspan="4" align="left" valign="top" class="arial-12">
+              <table width="671" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                <tr>
+
+                  <td align="left" valign="top" class="arial-12">
+                  <table width="671" border="0" cellpadding="0" cellspacing="0" class="arial-12">
+
+                    <tr>
+
+                      <td align="left" valign="top">
+
+                      <p align="justify"><br />
+
+
+
+            			Az egyes termékek szállí­tási idejét azok adatlapján 
+						tűntetjük fel, ezek általában termékenként különböznek.&nbsp; A szállí­tás költsége függ a fizetés és 
+						a szállí­tás módjától, postai szállí­tás esetén a csomag 
+						súlyától is és ingyenes bizonyos rendelési érték felett. 
+						A rendszer a költséget automatikusan számí­tja és a 
+						rendelési folyamat végén kijelzi. A szállí­tási&nbsp; 
+						költségeket az oldal alján található táblázatokban 
+						láthatja.<br>
+						<br>
+						3 féle szállítási/átvételi mód közül választhat:<br>
+						<br>
+						<span class="arial-12-bold">Postai szállítás </span>
+						<p align="justify">Olcsóbb lehet a könnyebb csomagok 
+						esetében, de kevésbé megbízható, mint a másik 2 
+						szállítási/átvételi mód. <br>
+            			Kérjük, hogy olyan szállítási címet adjon meg, ahol 
+						hétköznap 8-17 óra között át tudják venni a csomagot, a 
+						posta csak ebben az időpontban kézbesít. A postás 
+						csak egyszer kísérli meg a kézbesítést, amennyiben ez 
+						sikertelen, úgy a helyi postahivatalban vehető át a 
+						csomag. Szállítási idő: a csomag feladást követő 
+						ÁLTALÁBAN 1-2. munkanap.<br>
+            			<p align="justify"><span class="arial-12-bold">Futárcéges szállítás
+						<br>
+						</span>
+            <br>
+            			A futárral való szállí­tás előnyt jelenthet, ha sürgős a 
+						szállí­tás, mivel a kézbesí­tés nagyobb biztonságú és 
+						sikertelen kézbesí­tés esetén telefonon egyeztetnek az újabb szállí­tási időpontról. 
+            			Kérjük, hogy olyan szállí­tási cí­met adjon meg, ahol 
+						hétköznap 8-17 óra között át tudják venni a csomagot, a 
+						futár csak ebben az időpontban kézbesít ! Felhívjuk 
+						figyelmét, hogy napon belül nem tudjuk meghatározott 
+						időre küldeni a csomagot ! Amennyiben ez probléma Önnek, kérjük, hogy válasszon egy Pick-pack 
+						pontot az átvétel helyének ! Szállítási idő: a csomag feladást 
+						követő GARANTÁLTAN Budapesten 1., vidékre általában 1., 
+						maximum 2. munkanap.<p align="justify">
+												
+						<span class="arial-12-bold">Pick-pack átvételi pontok</span><img SRC="kepek/pickpack.jpg">            <br>
+            			Amennyiben nem tud megadni olyan átvételi helyet, ahol 
+						hétköznap 8-17 óra között át tudják venni csomagot, úgy 
+						lehetősége van az ország több mint 220 Pick-pack pontján 
+												átvenni azt. A Pick-pack 
+												pontok <img SRC="kepek/relay.jpg"> és <img SRC="kepek/inmedio.jpg"> újság üzletek, melyek frekventált helyeken találhatóak meg. 
+						Többségükben bankkártyával is fizethet és hétvégén is 
+						nyitva vannak. Szállítási idő: a csomag feladást követő 
+						GARANTÁLTAN 2. munkanap<br>
+						<br>
+						3 féle fizetés mód közül választhat:<p>E<span class="arial-12-bold">lőre utalás</span><br />
+						Amennyiben ezt fizetési módot választja, kérjük a 
+						megrendelt termékek értékét utalja át a visszaigazoló 
+						e-mailben szereplő OTP bankszámlaszámunkra a rendelési 
+						kód feltüntetésével. Az összeg megérkezése után küldjük 
+						rendelését.</p>
+            <p><span class="arial-12-bold">Fizetés utánvéttel </span><br />
+              A csomag átvételekor készpénzben kell fizetni.</p>
+            <p align="justify"><span class="arial-12-bold">Fizetés interneten, 
+			Paypal-on keresztül<br />
+
+                              <img border="0" src="kepek/paypal_logo.gif" /></span><br />
+
+                              Lehetősége van a Paypal rendszeren keresztüli 
+			fizetésre. Ez a fizetési mód teljesen biztonságos. A Paypal 
+			használatával fizethet a következő tí­pusú bankkártyákkal:
+
+                              <img border="0" src="kepek/logo_ccVisa.gif" /><img border="0" src="kepek/logo_ccMC.gif" /><img border="0" src="kepek/logo_ccDiscover.gif" /><img border="0" src="kepek/logo_ccBank.gif" /><img border="0" src="kepek/logo_ccAmex.gif" /> 
+
+                               <br/>A mi rendszerünkhöz nem jut el az ön 
+			bankkártyájának adata, azt csak a Paypal szervere tárolja 
+			titkosí­tott formában, mi csak egy értesí­tést kapunk, hogy sikerült-e 
+			a tranzakció vagy sem. Bővebb információt a Paypal hivatalos 
+
+                              <a class="body-link" target="_blank" href="http://www.paypal.com/">
+			weboldalán</a> találhat, angolul.</p>
+<p align="justify"><span class="arial-12-bold">Egészségpénztárak<br>
+</span><br />
+                            
+                               Az ország összes egészségpénztárával kapcsolatban 
+állunk, többek közt: <br />
+                      <img border="0" src="kepek/axa.jpg" width="61" height="54" /><img border="0" src="kepek/otp.jpg" width="202" height="43" /> <img border="0" src="kepek/kh.jpg" width="52" height="48" />&nbsp;&nbsp;&nbsp; <img border="0" src="kepek/mkb.jpg" width="49" height="47" />&nbsp;<img border="0" src="kepek/wellness.jpg" /><br />
+              termékeink teljeskör&ucirc;en elszámolhatóak.               <br>
+              A számlázási adatoknál kérjük, hogy válassza ki egészségpénztárát 
+és adja meg 
+az igénybevevő nevét, pénztári azonosí­tóját. A számla eredeti példányát juttassa 
+vissza pénztárának, az összeg átutalásra fog kerülni az igénybevevő 
+bankszámlájára, melyet az egészségpénztári egyenlegéből levonnak. Ticket Wellnes 
+jegyekkel csak személyesen tud fizetni.                        
+<p align="justify">
+
+<table border="1" cellpadding="3" cellspacing="0" bordercolor="#C0C0C0" id="AutoNumber2" class="arial-12">
+  <tr>
+    
+
+    <td width="561" align="left" valign="middle" bgcolor="#F4F4F4" colspan="4"> 
+    <p align="center">&nbsp;Szállítási költség postai szállí­tás esetén</td>
+
+
+  </tr>
+  <tr>
+    <td width="169" align="left" valign="middle" bgcolor="#F4F4F4"> Fizetési mód</td>
+    <td width="120" align="right" valign="middle" bgcolor="#F4F4F4">
+	Súlyhatár(g)</td>
+    <td width="120" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+    Szállí­tási költség</p></td>
+    <td width="272" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+	Értékhatár, mely felett ingyenes a szállítás</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" rowspan="4">Előre utalás</td>
+    <td align="right" valign="top">80</td>
+    <td align="right" valign="top">490 Ft</td>
+    <td align="right" valign="top" rowspan="4">15 000 Ft</td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">230</td>
+    <td align="right" valign="top">
+
+    590 Ft</td>
+  </tr>
+  <tr>
+    
+
+
+
+    <td align="right" valign="top">480</td>
+
+
+
+    <td align="right" valign="top">750 Ft</td>
+
+
+  </tr>
+
+
+  <tr>
+
+
+    <td align="right" valign="top">480 g fölött</td>
+
+
+
+    <td align="right" valign="top">990 Ft</td>
+
+
+
+  </tr>
+  <tr>
+  
+
+    <td align="left" valign="top" rowspan="3"> 
+
+    Utánvét<br>
+    (átmenetileg nem választható postai szállí­tás esetén )</td>
+
+
+
+
+
+    <td align="right" valign="top">80</td>
+
+
+    <td align="right" valign="top">690 Ft</td>
+
+
+
+    <td align="right" valign="top" rowspan="3">20 000 Ft</td>
+
+  </tr>
+  <tr>
+
+
+
+
+    <td align="right" valign="top">230</td>
+
+
+    <td align="right" valign="top">890 Ft</td>
+
+
+  </tr>
+  <tr>
+  
+
+
+
+
+    <td align="right" valign="top">230 g fölött</td>
+
+
+
+    <td align="right" valign="top">990 Ft</td>
+
+  </tr>
+  <tr>
+
+
+    <td align="left" valign="top" rowspan="5">
+
+    Paypal</td>
+
+
+
+
+
+    <td align="right" valign="top">80</td>
+
+
+    <td align="right" valign="top">590 Ft</td>
+
+
+
+    <td align="right" valign="top" rowspan="5">25 000 Ft</td>
+
+
+  </tr>
+  <tr>
+
+
+    <td align="right" valign="top">230</td>
+
+
+    <td align="right" valign="top">790 Ft</td>
+
+  </tr>
+  <tr>
+
+
+    <td align="right" valign="top">480</td>
+
+
+
+    <td align="right" valign="top">890 Ft</td>
+
+
+  </tr>
+  <tr>
+
+
+    <td align="right" valign="top">730</td>
+
+
+    <td align="right" valign="top">990 Ft</td>
+
+
+  </tr>
+  <tr>
+
+
+
+
+    <td align="right" valign="top">730 g fölött</td>
+
+
+    <td align="right" valign="top">1090 Ft</td>
+
+  </tr>
+</table>
+                      Tájékoztatásul: egy 6db-os kiszerelésű kontaktlencse 
+dobozostul kb. 30g súlyú.<br>
+                      <br>
+&nbsp;<table border="1" cellpadding="3" cellspacing="0" bordercolor="#C0C0C0" id="AutoNumber2"  class="arial-12">
+  <tr>
+    
+
+    <td width="561" align="left" valign="middle" bgcolor="#F4F4F4" colspan="3"> 
+    <p align="center">&nbsp;Szállí­tási költség futárral való szállí­tás esetén</td>
+
+
+  </tr>
+  <tr>
+    <td width="169" align="left" valign="middle" bgcolor="#F4F4F4"> Fizetési mód</td>
+    <td width="120" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+	Szállítási költség</p></td>
+    <td width="272" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+	Értékhatár, mely felett ingyenes a szállítás</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Előre utalás</td>
+    <td align="right" valign="top">740 Ft</td>
+    <td align="right" valign="top">15 000 Ft</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Utánvét</td>
+    <td align="right" valign="top">990 Ft</td>
+    <td align="right" valign="top">20 000 Ft</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Paypal</td>
+    <td align="right" valign="top">1090 Ft</td>
+    <td align="right" valign="top">25 000 Ft</td>
+  </tr>
+</table>
+						<p align="justify">
+
+&nbsp;<table border="1" cellpadding="3" cellspacing="0" bordercolor="#C0C0C0" id="AutoNumber3"  class="arial-12">
+  <tr>
+    
+
+    <td width="561" align="left" valign="middle" bgcolor="#F4F4F4" colspan="3"> 
+    <p align="center">&nbsp;Szállí­tási költség Pick-pack ponton való átvétel 
+	esetén</td>
+
+
+  </tr>
+  <tr>
+    <td width="169" align="left" valign="middle" bgcolor="#F4F4F4"> Fizetési mód</td>
+    <td width="120" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+	Szállítási költség</p></td>
+    <td width="272" align="right" valign="middle" bgcolor="#F4F4F4"><p align="right">
+	Értékhatár, mely felett ingyenes a szállítás</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Előre utalás</td>
+    <td align="right" valign="top">640 Ft</td>
+    <td align="right" valign="top">15 000 Ft</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Utánvét</td>
+    <td align="right" valign="top">790 Ft</td>
+    <td align="right" valign="top">20 000 Ft</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Paypal</td>
+    <td align="right" valign="top">990 Ft</td>
+    <td align="right" valign="top">25 000 Ft</td>
+  </tr>
+</table><p align="justify"><br />
+</td>
+                          </tr>
+
+                  </table>
+                  
+                  
+      </td>
+     </tr>
+    </table>
+    
+    </td>
+  </tr>
+</table>
+<br />

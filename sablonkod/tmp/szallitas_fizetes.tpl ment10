@@ -1,0 +1,277 @@
+<script type="text/javascript" src="includes/overlib/overlib.js"><!-- overLIB (c) Erik Bosrup --></script>
+
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+
+
+<table width="691" border="0" align="center" cellpadding="0" cellspacing="0">
+  
+  <tr>
+    <td height="24" align="left" valign="middle" class="title">{$ford.szallitas_es_fizetes}</td>
+    <td width="94" align="right" valign="middle" class="cart"><a href="{$sitenev}{$alnev.kosar}" class="body-link">{$ford.kosar}</a></td>
+   
+  </tr>
+</table>
+
+
+
+
+<form id="form2" name="form2" method="post" action="{$sitenev}{$alnev.szallitas}">
+<input type="hidden" name="kuldveszall" value="1">
+          
+<table width="671" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="left" valign="top" class="arial-12">
+                      
+                      <table width="671" border="0" align="center" cellpadding="3" cellspacing="0">
+
+                          <tr>
+
+                            <td height="30" bgcolor="#FFFFFF">
+                            
+                            <!-- innentől -->
+                            
+{if !empty($sz_hiba) }
+  <span class="error">{$sz_hiba}</span>
+{/if}
+                            
+<table class="szallitas" width="691" style="border-collapse: collapse" border="1" cellspacing="0" cellpadding="0">
+    <tr>
+        <td colspan="2" rowspan="2" align="center">
+        <p align="center">{$ford.csomag_sulya}: {$osszes_suly} g</td>
+
+        <td colspan="3" bordercolor="#FFFFFF" align="center" >
+        <p align="center"><br />
+        {if empty($sz_hiba) }
+          {$ford.szallitas}:*
+        {else}
+          <span class="error">{$ford.szallitas}:*</span>
+        {/if}
+        
+        <br />&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="szallitas">
+    
+    <!-- {if $szallmod == $sz_item.szall_id}checked="checked"{/if} -->
+    <!-- {if $fizmod == $fiz_item.fiz_id}checked="checked"{/if}    -->
+    
+    {foreach from=$szallitasok item=sz_item}
+    
+    {literal}
+    <script language="javascript">
+        szalmod={/literal}{$sz_item.szall_id}{literal};
+    </script> 
+    {/literal}
+    
+    
+    <td align="center" valign="top"><input type="radio" name="szallmod" id="szallmod" value="{$sz_item.szall_id}" onclick="javascript:szalmod={$sz_item.szall_id};dinamikusar(fizmod,szalmod);" /> {$sz_item.szallnev} <a href="javascript:void(0);" onmouseover="return overlib('{$sz_item.segitseg}',OFFSETX, 15, OFFSETY,-15,HAUTO,VAUTO,CAPTION,'{$sz_item.szallnev}');" onmouseout="return nd();"><img src="kepek/kerdojel.gif" border="0"></a>
+    
+    {if $sz_item.szall_id == 3}
+    <div id="pickpackbox" style="display:none;" align="left">
+        <br />
+        <select name="p_megye" size="1" onchange="hely_feltoltes(this.form,this,'p_varos')" class="kicsi-select">
+        <option value="0">Válassz megyét</option>
+        {foreach from=$megyek item=megye}
+          <option value="{$megye.hely_id}">{$megye.hely_nev}</option>
+        {/foreach}
+        </select>
+        <br />
+        <select name="p_varos" size="1"  onchange="hely_feltoltes(this.form,this,'p_hely')" class="kicsi-select">
+        <option value="0">Válassz várost/kerületet</option>
+        </select>
+        <br />
+        <select name="p_hely" size="1" onchange="nyitvatartas(this)" class="kicsi-select">
+        <option value="0">Válassz átvételi pontot</option>
+        </select>
+        
+        <br /><br />
+        <font size="-2">
+        <span id="nyitvatart">
+        
+        </span>
+        </font>
+        <br />
+    </div>
+    {/if}
+    
+    </td>
+    {/foreach} 
+    
+    </tr>
+    
+    <tr>
+
+        <td rowspan="{$fizszam}" bordercolor="#FFFFFF" >
+        {if empty($sz_hiba) }
+          {$ford.fizetes}:*
+        {else}
+          <span class="error">{$ford.fizetes}:*</span>
+        {/if}
+        </td>
+        
+
+    
+    {foreach from=$fizetesek item=fiz_item}
+    
+    {literal}
+    <script language="javascript">
+        fizmod={/literal}{$fiz_item.fiz_id}{literal};
+    </script> 
+    {/literal}
+    
+    
+      <td><input type="radio" name="fizetesmod" id="fizetesmod" value="{$fiz_item.fiz_id}" onclick="fizmod={$fiz_item.fiz_id};dinamikusar(fizmod,szalmod);" />{$fiz_item.fiznev} <a href="javascript:void(0);" onmouseover="return overlib('{$fiz_item.segitseg}',OFFSETX, 15, OFFSETY,-15,HAUTO,VAUTO,CAPTION,'{$fiz_item.fiznev}');" onmouseout="return nd();"><img src="kepek/kerdojel.gif" border="0"></a>
+
+      </td>
+      
+      
+        {foreach from=$szallitasok item=sz_item}
+          <td align="center">{szallarformat ar=$szall_tomb[$fiz_item.fiz_id][$sz_item.szall_id].ar ingyen=$szall_tomb[$fiz_item.fiz_id][$sz_item.szall_id].ingyen}</td>
+        {/foreach}
+      
+      </tr>
+      {if $fizszam != $fiz_item.fiz_id}<tr>{/if}
+      {/foreach}
+    
+    
+        
+</table>
+
+
+<!--
+    {foreach from=$szall_tomb item=egysor}
+      <tr align="center">
+        {foreach from=$egysor item=egyoszlop}
+          <td>{szallarformat ar=$egyoszlop.ar ingyen=$egyoszlop.ingyen}</td>
+        {/foreach}      </tr>
+      {/foreach}
+-->
+
+                   
+                            
+<br />         
+<span class="Arial-12"></span>                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td bgcolor="#FFFFFF" class="arial-12-bold">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#F4F4F4" class="arial-12-bold">{$ford.osszesen} :
+                               {$osszesen|arformat} {$ford.termekara} + <span id="szall_ar"> {$szallar|arformat} </span>&nbsp;{$ford.szallitasi_koltseg} .
+                              {$ford.szallitas_osszesen} : <span id="osz_ar"> {$osszesen|arformat}</span> . </td>
+                          </tr>
+<tr>
+  <td height="50" bgcolor="#FFFFFF" align="center">
+    <input name="szallitas" class="form-button" value="{$ford.kovetkezo}" type="submit">
+  </td>
+</tr>
+
+                          <tr>
+                            <td bgcolor="#FFFFFF"><table width="100%" border="0" align="center" cellpadding="3" cellspacing="0">
+                                
+                            </table></td>
+                          </tr>
+
+                      </table></td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+                    </form>
+          <div align="center"></div></td>
+      </tr>
+      
+      <tr>
+
+        <td height="30" align="center" valign="top">&nbsp;</td>
+      </tr>
+</table>
+
+{literal}
+    
+    <script language="javascript">
+            var fizmod=0;
+            var szalmod=0;
+            
+        function dinamikusar(fizmod,szalmod){
+            var arak={{/literal}{$artomb}{literal}};
+            var ar=0;
+            var ossz_ar={/literal}{$osszesen}{literal};
+            var chk=document.getElementsByName('fizetesmod');
+            var chk2=document.getElementsByName('szallmod');
+            
+            if( szalmod == 3) {
+              document.getElementById('pickpackbox').style.display="block";
+            } else {
+              document.getElementById('pickpackbox').style.display="none";
+            } 
+            
+            if ((arak.length==1) && (arak[chk2.value].length==1)){chk[0].checked = true; chk1[0].checked = true;}
+            for (i = 0; i < chk.length; i++){
+                if (arak[chk[i].value][szalmod]==" - "){
+                    chk[i].disabled = true ;
+                    }
+                else{chk[i].disabled = false ;}
+                }
+            for (i = 0; i < chk2.length; i++){
+                if (arak[fizmod][chk2[i].value]==" - "){
+                    chk2[i].disabled = true ;
+                    }
+                else{chk2[i].disabled = false ;}
+                }
+            ar=arak[fizmod][szalmod];
+            
+            if(typeof(ar)!="undefined"){
+                if (ar==" - "){
+                }
+                document.getElementById('szall_ar').innerHTML=ar.toFixed(0)+ ' {/literal}{$dev}{literal}';
+                document.getElementById('osz_ar').innerHTML=(ar+ossz_ar).toFixed(0)+ ' {/literal}{$dev}{literal}';
+                }
+        }
+        
+        var data = {/literal}{$helyek}{literal};
+        
+        function nyitvatartas(v) {
+            var nyitvatartasok = {/literal}{$nyitvatartasok}{literal};
+            
+            document.getElementById('nyitvatart').innerHTML=nyitvatartasok[v.value].hely_nyitva;
+        }
+        
+        function hely_feltoltes(f,v,mit) {
+            
+            var helyek = data[v.value];
+            
+            for(var z=f.elements[mit].options.length-1; z>0; z--)
+            {
+                f.elements[mit].remove(z);
+            }
+
+            if( mit == 'p_varos') {
+                for(var z=f.elements['p_hely'].options.length-1; z>0; z--)
+                {
+                    f.elements['p_hely'].remove(z);
+                }
+            }
+            
+            if( v.value > 0 && mit != 'p_hely') {
+            
+                for(var i=0; i<helyek.length; i++) {
+                    f.elements[mit].options[f.elements[mit].options.length] = new Option(helyek[i].hely_nev, helyek[i].hely_id);
+                }
+            
+            } 
+            
+            if( v.value > 0 && mit == 'p_hely' )  {
+                for(var i=0; i<helyek.length; i++) {
+                        f.elements[mit].options[f.elements[mit].options.length] = new Option(helyek[i].hely_bolt+': '+helyek[i].hely_cim, helyek[i].hely_id);
+                    }
+                }
+        }
+        
+        
+        dinamikusar(fizmod,szalmod);
+        </script>    
+        
+      {/literal}
