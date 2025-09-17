@@ -38,7 +38,12 @@
         setcookie("cc1", "Rendben", time() + 2592000);
     }
     
-    $sitenev = 'http://kontaktlencsek.hu/';
+    // Dynamic site URL based on current domain
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $sitenev = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
+    
+    // Fallback to hardcoded if needed
+    //$sitenev = 'http://kontaktlencsek.hu/';
     //$sitenev = 'http://localhost/php/dataglobe/';
     
     // adatbáziskezelés
