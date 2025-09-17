@@ -1,5 +1,5 @@
 <?php
-    if( $_SERVER['SERVER_NAME'] == 'kontaktlencsek.hu' ) {
+    if( $_SERVER['SERVER_NAME'] == 'kontaktlencsek.hu' || $_SERVER['SERVER_NAME'] == 'test.kontaktlencsek.hu' ) {
 		require_once 'adodb_lite/adodb.inc.php';
 	}
       
